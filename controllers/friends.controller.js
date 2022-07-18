@@ -37,4 +37,4 @@ module.exports = {
     getFriends,
     getFriend,
 
-}
+};
