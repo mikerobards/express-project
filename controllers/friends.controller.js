@@ -9,7 +9,7 @@ function postFriend(req, res) {
 
     const newFriend = {
         name: req.body.name,
-        id: model.length
+        id: model.length,
     };
     model.push(newFriend);
 
@@ -27,7 +27,7 @@ function getFriend(req, res) {
         res.status(200).json(friend);
     } else {
         res.status(404).json({
-            error: "Friend does not exist"
+            error: 'Friend does not exist'
         });
     }
 }
@@ -36,5 +36,4 @@ module.exports = {
     postFriend,
     getFriends,
     getFriend,
-
 };
